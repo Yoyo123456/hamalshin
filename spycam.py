@@ -11,7 +11,7 @@ def main(debug=False,fromCamera=True):
     im = None
     if fromCamera:
         print("inif")
-        capture = cv2.VideoCapture(1)
+        capture = cv2.VideoCapture(2)
         while True:
             ret, frame = capture.read()
             cv2.imshow('Original Capture',frame)
